@@ -1,7 +1,7 @@
 /**
  * Java code to implement binary search which contains
  * duplicate elements, and to return the lowsest index
- * of the key
+ * of the key element to be searched
  * /
 public class Code
 {
