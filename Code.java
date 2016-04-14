@@ -2,7 +2,7 @@
  * Java code to implement binary search which contains
  * duplicate elements, and to return the lowsest index
  * of the key element to be searched
- * /
+ */
 public class Code
 {
 	private static final int[] arr = {1,2,3,4,7,7,7,7,7,8,9}; 
