@@ -1,0 +1,33 @@
+/**
+* Java program to implement shell sort
+*/
+public class Solution
+{
+	private static final int arr[] = {2,5,4,3,7,8,9,1,6,6};
+	public static void main(String[] args)
+	{
+		final int N = arr.length;
+		int h = 1;
+		while(h<(N/3))
+			h = 3*h + 1;
+		
+		while(h>=1)
+		{
+			for(int i=h;i<N;i++)
+			{
+				for(int j=i;j>=h && (arr[j-h]>arr[j]);j-=h)
+				{
+					int temp = arr[j-h];
+					arr[j-h] = arr[j];
+					arr[j] = temp;
+				}
+			}
+
+			h=h/3;
+		}
+
+		for(int x:arr)
+			System.out.println(x);
+	}
+
+}
