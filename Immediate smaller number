@@ -1,0 +1,35 @@
+/**
+* Java program to implement immediate
+* smaller element.
+* http://www.practice.geeksforgeeks.org/problem-page.php?pid=525
+*/
+import java.util.Scanner;
+public class Solution
+{
+	public static void main(String[] args)
+	{
+		Scanner sx = new Scanner(System.in);
+		int T = sx.nextInt();
+		
+		for(int loop=0;loop<T;loop++)
+		{
+			int N = sx.nextInt();
+			int[] arr = new int[N];
+			
+			for(int i=0;i<N;i++)
+				arr[i] = sx.nextInt();
+
+			for(int i=0;i<N-1;i++)
+		    {
+			    if(arr[i+1]<arr[i])
+				    System.out.print(" " +arr[i+1]);
+			    else
+				    System.out.print(" -1");
+		    }
+
+		    System.out.print(" -1");
+		}
+		
+
+	}
+}
